@@ -33,15 +33,17 @@ public class Measurement extends AppCompatActivity {
                 if(intCompareTo(door_width, height)) {
                     Toast.makeText(Measurement.this, R.string.can_fit, Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(Measurement.this, R.string.height_check, Toast.LENGTH_SHORT).show();
-                    door_height.setVisibility(View.VISIBLE);
+                else if(door_height.getVisibility() == View.VISIBLE){
                     if(intCompareTo(door_height, width)){
                         Toast.makeText(Measurement.this, R.string.can_fit, Toast.LENGTH_SHORT).show();
                     }
                     else{
                         Toast.makeText(Measurement.this, R.string.not_fit, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(Measurement.this, R.string.height_check, Toast.LENGTH_SHORT).show();
+                    door_height.setVisibility(View.VISIBLE);
                 }
             }
         });
