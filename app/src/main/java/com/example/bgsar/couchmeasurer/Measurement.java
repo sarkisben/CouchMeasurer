@@ -24,7 +24,7 @@ public class Measurement extends AppCompatActivity {
         width = (EditText) findViewById(R.id.widthText);
 //        length = (EditText) findViewById(R.id.lengthText);
         door_width = (EditText) findViewById(R.id.doorWidthText);
-        door_height = (EditText) findViewById(R.id.doorWidthHeight);
+        door_height = (EditText) findViewById(R.id.doorHeight);
         Button enterButton = (Button) findViewById(R.id.enterButton);
 
         enterButton.setOnClickListener(new View.OnClickListener() {
@@ -33,17 +33,11 @@ public class Measurement extends AppCompatActivity {
                 if(intCompareTo(door_width, height)) {
                     Toast.makeText(Measurement.this, R.string.can_fit, Toast.LENGTH_SHORT).show();
                 }
-                else if(door_height.getVisibility() == View.VISIBLE){
-                    if(intCompareTo(door_height, width)){
-                        Toast.makeText(Measurement.this, R.string.can_fit, Toast.LENGTH_SHORT).show();
-                    }
-                    else{
-                        Toast.makeText(Measurement.this, R.string.not_fit, Toast.LENGTH_SHORT).show();
-                    }
+                else if(intCompareTo(door_height, width)){
+                    Toast.makeText(Measurement.this, R.string.can_fit, Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(Measurement.this, R.string.height_check, Toast.LENGTH_SHORT).show();
-                    door_height.setVisibility(View.VISIBLE);
+                else {
+                    Toast.makeText(Measurement.this, R.string.not_fit, Toast.LENGTH_SHORT).show();
                 }
             }
         });
