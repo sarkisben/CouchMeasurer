@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_spacing">10dp</dimen>
+    <dimen name="all_round_spacing">8dp</dimen>
+    <dimen name="big_menu_width">282dp</dimen>
+    <dimen name="big_menu_height">487dp</dimen>
+    <dimen name="menu_width">237dp</dimen>
+    <dimen name="menu_height">214dp</dimen>
+
+</resources>

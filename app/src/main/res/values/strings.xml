@@ -1,4 +1,7 @@
 <resources>
+    <string name="select">Select an option</string>
+    <string name="one_door">Measure for one door</string>
+    <string name="complicated">Account for obstructions</string>
     <string name="app_name">Couch Measurer</string>
     <string name="title">Enter Dimensions (in inches)</string>
     <string name="couch_title">Couch Measurements</string>
