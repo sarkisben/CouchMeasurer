@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".StairsActivity"
+    tools:showIn="@layout/activity_stairs">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="256dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="@dimen/all_round_spacing"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/all_round_spacing"
+        android:text="@string/title"
+        android:textSize="@dimen/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="@dimen/menu_width"
+        android:layout_height="@dimen/menu_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/stair_measurements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stair_title" />
+
+        <EditText
+            android:id="@+id/stair_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_round_spacing"
+            android:layout_marginTop="@dimen/all_round_spacing"
+            android:layout_marginEnd="@dimen/all_round_spacing"
+            android:layout_marginBottom="@dimen/all_round_spacing"
+            android:ems="10"
+            android:hint="@string/height"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/stair_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_round_spacing"
+            android:layout_marginTop="@dimen/all_round_spacing"
+            android:layout_marginEnd="@dimen/all_round_spacing"
+            android:layout_marginBottom="@dimen/all_round_spacing"
+            android:ems="10"
+            android:hint="@string/width"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/stair_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_round_spacing"
+            android:layout_marginTop="@dimen/all_round_spacing"
+            android:layout_marginEnd="@dimen/all_round_spacing"
+            android:layout_marginBottom="@dimen/all_round_spacing"
+            android:ems="10"
+            android:hint="@string/length"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/all_round_spacing"
+        android:layout_marginTop="@dimen/all_round_spacing"
+        android:layout_marginEnd="@dimen/all_round_spacing"
+        android:layout_marginBottom="@dimen/all_round_spacing"
+        android:text="@string/enter_measurements"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+</android.support.constraint.ConstraintLayout>

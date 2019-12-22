@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Measurement"></activity>
+        <activity android:name=".Measurement" />
+        <activity
+            android:name=".StairsActivity"
+            android:label="@string/title_activity_stairs"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

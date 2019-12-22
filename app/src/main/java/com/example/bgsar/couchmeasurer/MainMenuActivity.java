@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainMenuActivity extends AppCompatActivity {
 
     private Button oneDoorButton;
+    private Button stairButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,15 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenuActivity.this, Measurement.class);
+                startActivity(intent);
+            }
+        });
+
+        stairButton = (Button) findViewById(R.id.stair_button);
+        stairButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenuActivity.this, StairsActivity.class);
                 startActivity(intent);
             }
         });
